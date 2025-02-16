@@ -1,0 +1,17 @@
+{
+  "name": "microfrontend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pnpm run -parallel -filter \"./**\" start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.22.0"
+  }
+}
