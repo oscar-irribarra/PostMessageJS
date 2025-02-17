@@ -24,7 +24,7 @@ export class ReactCounterComponent implements AfterViewInit {
     private sanitizer: DomSanitizer
   ) {
     this.iframeSrc = this.sanitizer.bypassSecurityTrustResourceUrl(
-      CONFIG.MESSAGE_ORIGIN
+      CONFIG.MESSAGE_ORIGIN_COUNTER
     );
   }
 
@@ -35,7 +35,7 @@ export class ReactCounterComponent implements AfterViewInit {
       });
 
       this.messageService.initializeMessageListener(
-        CONFIG.MESSAGE_ORIGIN,
+        CONFIG.MESSAGE_ORIGIN_COUNTER,
         (data) => {
           this.counterFromReact = data.counter;
         }

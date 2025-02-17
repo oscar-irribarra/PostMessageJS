@@ -69,3 +69,5 @@ dist-ssr
 
 .angular
 .vscode
+
+pnpm-lock.yaml
